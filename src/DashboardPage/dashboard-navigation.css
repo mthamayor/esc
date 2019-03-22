@@ -1,0 +1,26 @@
+.dashboard-navigation {
+  margin-bottom: 0px;
+}
+.dashboard-navigation li {
+  margin-right: 30px;
+  list-style: none;
+  border-bottom: 2px solid transparent;
+}
+.active-link {
+  border-bottom-color: var(--primary-font-color) !important;
+}
+.dashboard-navigation li:last-child {
+  margin-right: 0px;
+}
+.dashboard-navigation a {
+  display: block;
+
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--default-font-color);
+}
+.dashboard-navigation a:hover {
+  color: var(--primary-font-color);
+}
