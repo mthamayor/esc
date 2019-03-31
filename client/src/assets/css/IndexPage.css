@@ -1,0 +1,15 @@
+.top-content {
+  height: 80%;
+  background: url(../img/background.jpg);
+}
+.bottom-content {
+  margin-top: -100px;
+  background: white;
+}
+.home-text {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+}
+.how-it-works {
+  background-color: #fafafa;
+}
