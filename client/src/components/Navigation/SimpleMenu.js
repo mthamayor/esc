@@ -60,5 +60,4 @@ class SimpleMenu extends Component {
     );
   }
 }
-
 export default SimpleMenu;
