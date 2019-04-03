@@ -86,7 +86,6 @@ function getSuggestionValue(suggestion) {
 
 const styles = theme => ({
   root: {
-    
     flexGrow: 1
   },
   container: {
@@ -156,7 +155,7 @@ class DropdownTextBox extends React.Component {
           {...autosuggestProps}
           inputProps={{
             classes,
-            label: 'Product',
+
             placeholder: '',
             value: popper,
             onChange: this.handleChange('popper'),

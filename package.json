@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
-    "lint-staged": {
-      "*.{js,jsx}": [
-        "pretty-quick --staged",
-        "eslint src/ --fix",
-        "git add"
-      ]
-    }
+    "client-build": "npm run build --prefix ./client",
+    "client-install": "npm install --prefix ./client",
+    "client": "npm start --prefix ./client",
+    "server": "npm start --prefix ./server",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "start": "npm run start:prod --prefix ./server",
+    "heroku-postbuild":
+      "NPM_CONFIG_PRODUCTION=false \"npm run client-install\" && \"npm run client-build\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,16 +28,6 @@
   },
   "homepage": "https://github.com/mthamayor/esc#readme",
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "eslint": "^5.12.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.12.4",
-    "lint-staged": "^8.1.5",
-    "prettier": "^1.16.4",
-    "pretty-quick": "^1.10.0"
+    "concurrently": "^4.1.0"
   }
 }
