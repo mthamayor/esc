@@ -6,12 +6,12 @@
   "scripts": {
     "client-build": "npm run build --prefix ./client",
     "client-install": "npm install --prefix ./client",
+    "server-install": "npm install --prefix ./server",
     "client": "npm start --prefix ./client",
     "server": "npm start --prefix ./server",
     "dev": "concurrently \"npm run client\" \"npm run server\"",
     "start": "npm run start:prod --prefix ./server",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false \"npm run client-install\" && \"npm run client-build\""
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false \"npm run server-install\" && \"npm run client-install\" && \"npm run client-build\""
   },
   "eslintConfig": {
     "extends": "react-app"
