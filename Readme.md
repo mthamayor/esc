@@ -19,7 +19,9 @@ Open the git bash terminal in your preferred directory and run
 
 The default branch for the project is the **production** branch.
 Switch to the production branch in git bash with
+
 `git checkout production`
+
 Here, you can branch out a part you want to work on.
 For example if you want to add changes to the complete project
 
