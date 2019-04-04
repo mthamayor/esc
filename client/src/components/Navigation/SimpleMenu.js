@@ -31,7 +31,7 @@ class SimpleMenu extends Component {
 
     const mappedMenuLinks = links.map(link => {
       return (
-        <MenuItem>
+        <MenuItem onClick={this.handleClose}>
           <Link to={link.link} style={menuStyle}>
             {link.name}
           </Link>

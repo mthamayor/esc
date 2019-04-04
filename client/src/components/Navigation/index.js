@@ -9,12 +9,8 @@ export default () => {
 
   const [links] = useState([
     {
-      name: 'Start Transaction',
-      link: '/start-transaction'
-    },
-    {
       name: 'Company',
-      link: '/start-transaction'
+      link: '#'
     },
     {
       name: 'Log in',
@@ -23,6 +19,10 @@ export default () => {
     {
       name: 'Sign up',
       link: '/auth/signup'
+    },
+    {
+      name: 'Pages',
+      link: '/pages'
     }
   ]);
 

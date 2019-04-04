@@ -9,6 +9,7 @@ import './assets/css/App.css';
 import Navigation from './components/Navigation';
 import PasswordResetPage from './PasswordResetPage';
 import DashboardPage from './DashboardPage';
+import { Pages } from './pages';
 
 const theme = createMuiTheme({
   palette: {
@@ -34,6 +35,7 @@ const App = () => {
           path="/dashboard/:subpage/:optionalpage?"
           component={DashboardPage}
         />
+        <Route path="/pages" component={Pages} />
       </MuiThemeProvider>
     </Router>
   );
