@@ -8,7 +8,7 @@ import DoneOutline from '@material-ui/icons/DoneOutline';
 import temp from '../assets/img/temp.png';
 // relative imports
 import '../assets/css/IndexPage.css';
-import Styles from "../assets/styles/Styles";
+import Styles from '../assets/styles/Styles';
 
 export default () => {
   return (

@@ -1,5 +1,5 @@
 {
-  "name": "esc",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,15 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.8",
     "react-select": "^2.4.2",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "lint-staged": "^8.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,14 +49,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint": "^5.12.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-react": "^7.12.4",
-    "lint-staged": "^8.1.5",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.10.0"
   }

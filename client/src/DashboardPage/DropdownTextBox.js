@@ -137,6 +137,7 @@ class DropdownTextBox extends React.Component {
 
   render() {
     const { classes } = this.props;
+    // eslint-disable-next-line no-shadow
     const { suggestions, popper } = this.state;
 
     const autosuggestProps = {
